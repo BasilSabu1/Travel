@@ -1,0 +1,621 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">T</span>ravel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+    <!-- Home Section Start -->
+    <div class="home ">
+
+      <h2>Book Unique Experience</h2>
+      <h6>Make Your Tour Amazing with Us</h6>
+      <!-- <a href="#" id="book">Book now</a> -->
+      <style>
+        /* Custom CSS to center the button */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; Center vertically within the viewport */
+            position: relative;
+            top: 300px;
+        }
+    </style>
+      <div class="container center" style="z-index: 1;">
+        <!-- Create a responsive button using Bootstrap classes -->
+        <button class="btn btn-warning book " >Join Now</button>
+    </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="https://img.freepik.com/premium-photo/woman-observing-landscape-beautiful-town-fishermen-sunset-generated-ai_321315-2195.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.digitalnerds.com/wp-content/uploads/summer-camping-scaled.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <div class="content">
+            
+        </div>
+    </div>
+    <!-- Home Section End -->
+
+
+
+
+
+    <!-- Section Book Start -->
+
+    <style>
+      /* Custom CSS for the destination section */
+      .destination-card {
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 20px;
+          margin: 10px;
+          text-align: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          height: 200px;
+          width: 200px;
+      }
+
+      .destination-card img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      @media (min-width: 768px) {
+          .destination-card {
+              width: 23%;
+              display: inline-block;
+          }
+      }
+
+      @media (max-width: 767px) {
+            .destination-card {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+
+    <section class="book" id="book" >
+      <div class="container text-center mt-5">
+
+        <div class="main-text">
+          <h1>Destinations</h1>
+        </div>
+
+        <style>
+          .destination-card img{
+            height: 190px;
+            width: 350px;
+            position: relative;
+            top: -18px;
+          }
+        </style>
+              <div class="col-md-3 destination-card">
+                  <img src="images/Udaipur2.jpg" alt="Destination 1">
+              </div>
+
+              <div class="col-md-3 destination-card">
+                  <img src="images/goa2.jpg" alt="Destination 2">
+              </div>
+              <div class="col-md-3 destination-card">
+                  <img src="images/Khajuraho.jpg" alt="Destination 3">
+              </div>
+              <div class="col-md-3 destination-card">
+                  <img src="images/Amritsar2.jpeg" alt="Destination 4">
+
+
+                </div>
+              </div>
+          </div>
+
+          <!-- <div class="col-md-6 py-3 py-md-0"> -->
+            <!-- <form action="#">
+
+              <input type="text" class="form-control" placeholder="Where To" required><br>
+              <input type="text" class="form-control" placeholder="How Many" required><br>
+              <input type="date" class="form-control" placeholder="Arrivals" required><br>
+              <input type="date" class="form-control" placeholder="Leaving" required><br>
+              <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
+              <input type="submit" value="Book Now" class="submit" required>
+
+            </form> -->
+          <!-- </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Section Book End -->
+
+
+
+
+
+
+
+
+    <!-- Section Packages Start -->
+    <section class="packages" id="packages">
+      <div class="container">
+        
+
+        <style>
+          .card img{
+            height: 250px;
+          }
+        </style>
+        <div class="main-txt">
+
+
+          <h1>Packages</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="images/Tajmahal.jpg" alt="">
+              <div class="card-body">
+                <h3>Taj Mahal</h3>
+                <p>This iconic white marble mausoleum is one of the Seven Wonders of the World and a UNESCO World Heritage Site,
+                   known for its breathtaking architecture and historical significance.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/goa.webp" alt="">
+              <div class="card-body">
+                <h3>Goa</h3>
+                <p>Known for its beautiful beaches, vibrant nightlife, and Portuguese-influenced architecture, Goa is a popular destination for both relaxation and adventure.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$400</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/Rishikesh and Haridwar.jpg" alt="">
+              <div class="card-body">
+                <h3>Rishikesh and Haridwar</h3>
+                <p>These twin towns on the banks of the Ganges River are known for their spiritual significance and offer activities like yoga, meditation, and white-water rafting.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$150</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/Amritsar.webp" alt="">
+              <div class="card-body">
+                <h3>Amritsar</h3>
+                <p>Home to the Golden Temple, a sacred Sikh shrine known for its architectural beauty and spirituality.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$210</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/Udaipur.jpg" alt="">
+              <div class="card-body">
+                <h3>Udaipur</h3>
+                <p> The City of Lakes is famous for its romantic ambiance and stunning palaces.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$320</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/Khajuraho.jpg" alt="">
+              <div class="card-body">
+                <h3>Khajuraho</h3>
+                <p> Famous for its stunning temples adorned with intricate erotic sculptures, Khajuraho is a UNESCO World Heritage Site and a testament to India's ancient architectural prowess.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$100</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Section Packages End -->
+
+
+
+
+
+
+
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>Services</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                
+                <h3>Affordable Hotel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food & Drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safty Guide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Around The World</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Fastest Travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventures</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Services End -->
+
+
+
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>Gallary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery7.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery2.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery3.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery11.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery12.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./gallery/gallery6.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+
+
+
+
+
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>About Us</h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="https://img.freepik.com/premium-photo/3d-rendering-yellow-suitcase-with-beach-accessories-blue-background-vacation-time-summer_46383-2247.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis dolorem, numquam earum at nam beatae voluptate natus consectetur facere, saepe cupiditate ut exercitationem deserunt, facilis quam perspiciatis autem iure illo harum minima. Quas, vitae aperiam laudantium alias asperiores nulla rerum, nihil eveniet perferendis sint illum accusamus officiis aliquam nam.</p>
+            <button id="about-btn">Read More...</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- About End -->
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer id="footer">
+      <h1>Travel</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">Basil</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright BasilC:\Users\Basil\OneDrive\Desktop\travel3\index.html. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
